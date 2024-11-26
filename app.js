@@ -359,23 +359,29 @@ function searchProduct() {
       var brandprice = watches [companyselected] [key].price;
       console.log(brandprice)
 
+      var brandcaption = watches [companyselected] [key].caption;
 
       document.getElementById('maindiv-1').classList.add('d-none');
       document.getElementById('maindiv-2').classList.add('d-none');
       document.getElementById('maindiv-3').classList.remove('d-none');
     document.getElementById ("maindiv-3").innerHTML = `
-  <div class="card cardfinal" style="width: 18rem;">
+  <div class="card cardfinal bg-secondary p-1" style="width: 24rem;">
+       <h5 class="card-title">${brandselected}</h5>
   <img id="productimage" src="${productImage}" class="card-img-top-d" alt="...">
-  <div class="card-body">
-     <h5 class="card-title">${brandselected}</h5>
-    <p class="card-text">Color: ${brandcolor} </p>
+  
+  <div class="card-body bg-secondary">
+    <p class="card-text"> <b>Caption:</b> ${brandcaption} </p>
+  </div>
+ <div class="card-body">
+    <p class="card-text">Color: <b>${brandcolor} </b></p>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">Price: ${brandprice}</li>
+    <li class="list-group-item">Price:<b> ${brandprice} </b></li>
    </ul>
    <div class="card-body">
     <button onclick="backtomain()" type="button" class="btn btn-primary">Back to Main</button>
 
+    </div>
   </div>
   </div>`
 
