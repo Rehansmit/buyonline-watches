@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Application</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo.PNG" alt="" width="80" height="50" class="d-inline-block align-text-center">
+                ByOnline
+            </a>
+            <!-- </div> -->
+            <div class="collapse navbar-collapse justify-content-center align-text-center" id="navbarNavDropdown">
+                <ul class="navbar-nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div>
+            <h1>Best Online Watches Deals</h1>
+        </div>
+        <div class="justify-content-center d-flex flex-wrap mt-5">
+            <select onchange="selectCompany()" name="company" Id="companyselect" class="form-select" aria-label="Default select example">
+                <option disabled selected value="">Choose Company</option>
+            </select>
+
+            <select onchange="selectBrand()" name="brand" Id="brandselect" class="form-select" aria-label="Default select example">
+                <option disabled selected value="">Choose Brand</option>
+            </select>
+
+            <button onclick="searchProduct()" type="button" class="btn btn-primary">Search Product</button>
+
+        </div>
+
+        <div id="maindiv-1">
+            <div id="carouselExampleSlidesOnly" class="carousel slide mt-5 mb-5" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/sl1.jpeg" class="d-block w-100 " alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/sl2.webp" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/sl3.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="maindiv-2" class="d-flex-row justify-content-center">
+            <div class="justify-content-center d-flex d-inline-block ">
+                <h3> Some New Arrivals </h3>
+            </div>
+
+            <div class="justify-content-center d-flex flex-wrap">
+                <div class="card mt-5 mb-2" style="width: 18rem;\">
+
+                    <img src="assets/nw1.webp" class="card-img-top" alt="...">
+
+                    <div class="card-body">
+                        <p class="card-text"> <b>Jess Bailey Designs</b><br>Round Gold-colored Analog Watch With Pink
+                            Leather Strap on Pink Notebook More info <br>
+                            <b>Price: 2000$</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mt-5 mb-2 " style="width: 18rem;\">
+
+                    <img src="assets/nw2.webp" class="card-img-top" alt="...">
+
+                    <div class="card-body">
+                        <p class="card-text"> <b>Jess Bailey Designs</b><br>Photo of Two Analog Watches with Black
+                            Leather Bands on Gray Surface
+
+                            <br>
+                            <b>Price: 3000$</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mt-5 mb-2" style="width: 18rem;\">
+
+                    <img src="assets/nw3.jpeg" class="card-img-top" alt="...">
+
+                    <div class="card-body">
+                        <p class="card-text"> <b>Rolex-New</b><br>Used Round Silver-colored Chronograph Watch
+                            With Link Bracelet
+                            <br>
+                            <b>Price: 2500$</b>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mt-5 mb-2" style="width: 18rem;\">
+
+                    <img src="assets/nw4.webp" class="card-img-top" alt="...">
+
+                    <div class="card-body">
+                        <p class="card-text"> <b>Rolex</b><br>Round Rolex Analog Watch With Silver-colored
+                            Link Bracelet
+                            <br>
+                            <b>Price: 3500$</b>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div id="maindiv-3" class=" d-flex justify-content-center d-none mt-5">
+
+           
+                    
+                </div>
+            </div>
+
+        </div>
+
+
+<div class="footer mt-5">
+
+    <footer style="background-color: #1b1b1b; color: #fff; padding: 40px 0;">
+        <div class="container">
+          <div class="row">
+            <!-- About Section -->
+            <div class="col-md-4 col-sm-12">
+              <h5>About Us</h5>
+              <p>
+                We are committed to delivering the best products and services to our customers. Stay connected with us to learn more.
+              </p>
+            </div>
+      
+            <!-- Quick Links -->
+            <div class="col-md-4 col-sm-12">
+              <h5>Quick Links</h5>
+              <ul style="list-style: none; padding: 0;">
+                <li><a href="#" style="color: #aaa; text-decoration: none;">Home</a></li>
+                <li><a href="#" style="color: #aaa; text-decoration: none;">About</a></li>
+                <li><a href="#" style="color: #aaa; text-decoration: none;">Services</a></li>
+                <li><a href="#" style="color: #aaa; text-decoration: none;">Contact</a></li>
+              </ul>
+            </div>
+      
+            <!-- Contact Info -->
+            <div class="col-md-4 col-sm-12">
+              <h5>Contact Us</h5>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> SMIT, Karachi, Pakistan<br>
+                <i class="fas fa-phone"></i> +92 302 555 00 34<br>
+                <i class="fas fa-envelope"></i> rehansmit724@gmail.com
+              </p>
+              <div>
+                <a href="#" style="margin-right: 10px; color: #aaa;"><i class="fab fa-facebook"></i></a>
+                <a href="#" style="margin-right: 10px; color: #aaa;"><i class="fab fa-twitter"></i></a>
+                <a href="#" style="margin-right: 10px; color: #aaa;"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <hr style="border-color: #555;">
+          <div class="text-center">
+            <p style="margin: 0;">© 2024 Digital World. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+      
+
+</div>
+
+
+
+
+    </div>
+
+
+
+    <script src="boot.js"></script>
+    <script src="bundle.js"></script>
+    <script src="popper.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
